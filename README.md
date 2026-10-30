@@ -55,7 +55,7 @@ The default service address is `http://192.168.1.141:8787`.
 
 
 
-If your NAS uses a different address, create a `.env` file containing:
+If your Device uses a different address, create a `.env` file containing:
 
 
 
@@ -63,7 +63,7 @@ If your NAS uses a different address, create a `.env` file containing:
 
 
 
-Change the address to match your NAS if required.
+Change the address to match your Device if required.
 
 
 
