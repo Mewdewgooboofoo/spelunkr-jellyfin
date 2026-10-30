@@ -1,0 +1,47 @@
+
+# Downloaded Spelunkr data
+
+data/*
+
+!data/.gitkeep
+
+
+
+# Local environment settings
+
+.env
+
+
+
+# Python
+
+__pycache__/
+
+*.py[cod]
+
+*.pyo
+
+
+
+# Backups
+
+*.backup
+
+*.bak
+
+*.pre-refresh
+
+
+
+# Logs
+
+*.log
+
+
+
+# OS files
+
+.DS_Store
+
+Thumbs.db
+

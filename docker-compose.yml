@@ -1,0 +1,48 @@
+
+services:
+
+  spelunkr:
+
+    build:
+
+      context: ./app
+
+    container_name: spelunkr-jellyfin
+
+    restart: unless-stopped
+
+    ports:
+
+      - "8787:8787"
+
+    volumes:
+
+      - ./app:/app
+
+      - ./data:/data:ro
+
+    environment:
+
+      - TZ=UTC
+      - BASE_URL=${BASE_URL:-http://192.168.1.141:8787}
+
+
+
+  updater:
+
+    build:
+
+      context: ./updater
+
+    container_name: spelunkr-updater
+
+    restart: unless-stopped
+
+    volumes:
+
+      - ./data:/data
+
+    environment:
+
+      - TZ=UTC
+
