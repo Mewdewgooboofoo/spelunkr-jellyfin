@@ -174,13 +174,11 @@ def maybe_reload_channels():
 
 
 
-
 def item_duration(item):
-
     duration_ms = item.get("durationMs")
-if duration_ms is not None:
-    return float(duration_ms) / 1000
-return float(item["duration"])
+    if duration_ms is not None:
+        return float(duration_ms) / 1000
+    return float(item["duration"])
 
 
 
